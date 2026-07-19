@@ -7,23 +7,26 @@
     grid-template-columns:80px 1fr 80px;
     align-items:center;
     background:#b71c1c;
-    padding:8px 20px;
+    padding:8px 10px;
     margin-bottom:30px;">
 
     <div>
         <img src="../images/mfc-company-logo.png"
              alt="Melrose Fire Company Logo"
+             class="header-logo"
              style="height:65px;">
     </div>
 
-    <div style="text-align:center;">
-        <a href="../index.html" style="color:white; margin:0 15px; text-decoration:none; font-weight:bold;">
+    <div style="text-align:center; white-space:nowrap;">
+        <a href="../index.html" style="color:white; margin:0 8px; text-decoration:none; font-weight:bold;">
             Authority and Verification
         </a>
-        <a href="../index.html#officers-section" style="color:white; margin:0 15px; text-decoration:none;">
-            Officers
+
+        <a href="../index.html#officers-section" style="color:white; margin:0 8px; text-decoration:none;">
+            Our Officers
         </a>
-        <a href="https://melrosefireco.org" style="color:white; margin:0 15px; text-decoration:none; font-weight:bold;">
+
+        <a href="https://melrosefireco.org" style="color:white; margin:0 8px; text-decoration:none; font-weight:bold;">
             Homepage
         </a>
     </div>
@@ -31,6 +34,7 @@
     <div style="text-align:right;">
         <img src="../images/melrose-fire-police-logo.png"
              alt="Melrose Fire Police Logo"
+             class="header-logo"
              style="height:65px;">
     </div>
 
@@ -143,6 +147,71 @@ footer {
 .dcjs-text {
     flex: 1;
     text-align: center;
+}
+		/* Responsive Layout */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 15px;
+}
+
+/* Make all images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation */
+@media (max-width: 768px) {
+    nav {
+        display: flex !important;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Header logos */
+@media (max-width: 768px) {
+    .header-logo {
+        height: 50px !important;
+    }
+}
+
+/* DCJS verification section */
+@media (max-width: 768px) {
+    .dcjs-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dcjs-text {
+        text-align: center;
+    }
+}
+
+/* Officer card image */
+@media (max-width: 768px) {
+    .profile img {
+        max-width: 200px;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .officer-link {
+        font-size: 0.95rem;
+    }
 }
 		
 </style>
