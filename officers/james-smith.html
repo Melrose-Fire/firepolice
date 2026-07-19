@@ -1,7 +1,35 @@
-<nav style="text-align: center; background: #b71c1c; padding: 12px; margin-bottom: 30px;">
-    <a href="../index.html" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Authority and Verification</a>
-    <a href="../index.html#officers-section" style="color: white; margin: 0 15px; text-decoration: none;">Our Officers</a>
-    <a href="https://melrosefireco.org" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Main Homepage</a>
+<nav style="
+    display:grid;
+    grid-template-columns:80px 1fr 80px;
+    align-items:center;
+    background:#b71c1c;
+    padding:8px 20px;
+    margin-bottom:30px;">
+
+    <div>
+        <img src="../images/mfc-company-logo.png"
+             alt="Melrose Fire Company Logo"
+             style="height:65px;">
+    </div>
+
+    <div style="text-align:center;">
+        <a href="../index.html" style="color:white; margin:0 15px; text-decoration:none; font-weight:bold;">
+            Authority and Verification
+        </a>
+        <a href="../index.html#officers-section" style="color:white; margin:0 15px; text-decoration:none;">
+            Our Officers
+        </a>
+        <a href="https://melrosefireco.org" style="color:white; margin:0 15px; text-decoration:none; font-weight:bold;">
+            Homepage
+        </a>
+    </div>
+
+    <div style="text-align:right;">
+        <img src="../images/melrose-fire-police-logo.png"
+             alt="Melrose Fire Police Logo"
+             style="height:65px;">
+    </div>
+
 </nav>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,26 +43,77 @@
         .profile { text-align: center; margin: 30px 0; }
         img { max-width: 250px; border-radius: 8px; border: 3px solid #b71c1c; }
         a { color: #1976d2; }
-    </style>
+       .dcjs-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.dcjs-logo {
+    width: 100px;
+    height: auto;
+    border: none;
+    border-radius: 0;
+	flex-shrink: 0;
+}
+
+.dcjs-text {
+    flex: 1;
+    text-align: left;
+}
+		
+</style>
 </head>
 <body>
 
     <h1>James Smith</h1>
-    <h2>Fire Police Lieutenant</h2>
-
+    <h2 style="text-align: center;">Fire Police Lieutenant</h2>
+    
     <div class="profile">
         <img src="https://via.placeholder.com/250" alt="James Smith">
         <p><strong>Badge #:</strong> 20-12</p>
     </div>
+<div style="
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:20px;">
+    <img src="../images/smith-card.png"
+     alt="card"
+     style="max-width:90%; height:auto; border:3px solid red;">
+</div>
+       
+<h2 style="text-align: center;">Verification</h2>
 
-    <h2>Verification</h2>
-    <p>This officer is a registered New York State Peace Officer with New York State Department of Criminal Justice Services and serving with the Melrose Fire Department.</p>
+<div class="dcjs-box">
+    <img src="../images/dcjs-logo.jpg"
+         alt="DCJS Logo"
+         class="dcjs-logo">
+
+    <div class="dcjs-text">
+        <p>
+            <strong>
+                This officer is a registered New York State Peace Officer with
+                the New York State Department of Criminal Justice Services and
+                is serving with the Melrose Fire Department.
+                Identifier: 8141020K.
+            </strong>
+        </p>
+    </div>
+</div>
     
-    <p><a href="../index.html">← Back to Fire Police Authority and Verification</a></p>
+  <p style="text-align: center;">
+    <a href="../index.html" style="color: #b71c1c; font-weight: bold;">← Back to Authority Guide</a> | 
+    <a href="https://melrosefireco.org" style="color: #b71c1c; font-weight: bold;">Melrose Fire Company Homepage</a>
+</p>
 
     <footer style="text-align:center; margin-top:50px; font-size:0.9em;">
-       The Melrose Fire Company, Inc • New York State Fire Police
+        The Melrose Fire Company, Inc • New York State Fire Police
     </footer>
 
 </body>
+</html>
+    </footer>
+    <footer style="text-align:center; margin-top:50px; font-size:0.9em;">
 </html>
