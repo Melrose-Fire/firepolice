@@ -1,36 +1,17 @@
-<nav style="
-    display:grid;
-    grid-template-columns:80px 1fr 80px;
-    align-items:center;
-    background:#b71c1c;
-    padding:8px 20px;
-    margin-bottom:30px;">
-
-    <!-- Left Logo -->
+<nav>
     <div>
         <img src="images/mfc-company-logo.png"
-             alt="Melrose Fire Company Logo"
-             style="height:50px;">
+             alt="Melrose Fire Company Logo">
     </div>
 
-    <!-- Navigation Links -->
-    <div style="text-align:center;">
-        <a href="../index.html"
-           style="color:white; margin:0 15px; text-decoration:none;">
-            Our Officers
-        </a>
-
-        <a href="https://melrosefireco.org"
-           style="color:white; margin:0 15px; text-decoration:none; font-weight:bold;">
-            Homepage
-        </a>
+    <div>
+        <a href="../index.html">Our Officers</a>
+        <a href="https://melrosefireco.org">Homepage</a>
     </div>
 
-    <!-- Right Logo -->
-    <div style="text-align:right;">
+    <div>
         <img src="images/melrose-fire-police-logo.png"
-             alt="Melrose Fire Police Logo"
-             style="height:50px;">
+             alt="Melrose Fire Police Logo">
     </div>
 
 </nav>
@@ -79,21 +60,36 @@ a:hover {
 }
 
 nav {
-    text-align: center;
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+    align-items: center;
     background: #b71c1c;
-    padding: 12px;
+    padding: 8px 20px;
     margin-bottom: 30px;
 }
 
+nav img {
+    height: 50px;
+    width: auto;
+}
+
+nav div:nth-child(2) {
+    text-align: center;
+}
+
+nav div:last-child {
+    text-align: right;
+}
+
 nav a {
-    color: #fff !important;
-    margin: 0 15px;
+    color: white;
     text-decoration: none;
+    margin: 0 15px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #f5f5f5 !important;
+    text-decoration: underline;
 }
 
 .header-info {
@@ -134,85 +130,22 @@ footer {
 .dcjs-box {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .dcjs-logo {
     width: 100px;
     height: auto;
-    flex-shrink: 0;
 }
 
 .dcjs-text {
     flex: 1;
-    text-align: center;
+    min-width: 250px;
+    text-align: left;
 }
-		/* Responsive Layout */
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    padding: 0 15px;
-}
-
-/* Make all images responsive */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Navigation */
-@media (max-width: 768px) {
-    nav {
-        display: flex !important;
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
-/* Header logos */
-@media (max-width: 768px) {
-    .header-logo {
-        height: 50px !important;
-    }
-}
-
-/* DCJS verification section */
-@media (max-width: 768px) {
-    .dcjs-box {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .dcjs-text {
-        text-align: center;
-    }
-}
-
-/* Officer card image */
-@media (max-width: 768px) {
-    .profile img {
-        max-width: 200px;
-    }
-}
-
-/* Phones */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 1.2rem;
-    }
-
-    .officer-link {
-        font-size: 0.95rem;
-    }
-}
-		
+				
 </style>
 </head>
 <body>
